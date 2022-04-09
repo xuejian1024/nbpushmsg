@@ -51,7 +51,7 @@ public class NbpushmsgApplication {
         String token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyMDAwMDgwMzkxIn0.mXqY4QYzNSKtHxtRMtLZZLNczcUakr_SkwGAtO4kqzo";//身份认证token串
         String certFilePath = ""; //直接填空字符串，CA证书，JDK已经内置相关根证书，无需指定
 
-        /*Map<String, NBCamera> map = new HashMap<String,NBCamera>();
+        Map<String, NBCamera> map = new HashMap<String,NBCamera>();
         NBCamera camera = new NBCamera();
         camera.setNb_device_id("861541064342026");
         camera.setNb_device_name("1-101");
@@ -75,7 +75,7 @@ public class NbpushmsgApplication {
         camera.setCamera_ip("192.168.1.12");
         camera.setCamera_port("9090");
         camera.setCamera_id("10038$1");
-        map.put("460113118743733",camera);*/
+        map.put("460113118743733",camera);
 
 
         //创建消息接收Listener
