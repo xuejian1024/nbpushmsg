@@ -1,0 +1,127 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.6)
+
+2022-04-08 14:49:37.741  INFO 15444 --- [           main] c.g.nbpushmsg.NbpushmsgApplication       : Starting NbpushmsgApplication v0.0.1-SNAPSHOT using Java 1.8.0_121 on DESKTOP-2J71M28 with PID 15444 (C:\Users\dell\Desktop\nb\nbpushmsg\target\nbpushmsg-0.0.1-SNAPSHOT.jar started by dell in C:\Users\dell\Desktop\nb\nbpushmsg)
+2022-04-08 14:49:37.743  INFO 15444 --- [           main] c.g.nbpushmsg.NbpushmsgApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-08 14:49:39.425  INFO 15444 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-08 14:49:39.426  INFO 15444 --- [           main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-04-08 14:49:39.426  INFO 15444 --- [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2022-04-08 14:49:39.426  INFO 15444 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-04-08 14:49:39.427  INFO 15444 --- [           main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-04-08 14:49:40.467  INFO 15444 --- [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2022-04-08 14:49:40.476  INFO 15444 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-08 14:49:40.476  INFO 15444 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-08 14:49:40.566  INFO 15444 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-08 14:49:40.566  INFO 15444 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2789 ms
+2022-04-08 14:49:40.665  INFO 15444 --- [           main] o.m.pooled.jms.JmsPoolConnectionFactory  : JMS ConnectionFactory on classpath is not a JMS 2.0+ version.
+2022-04-08 14:49:47.831  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : [[id: 0xe45ef8c0, L:/192.168.173.207:50708 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Connected to server
+2022-04-08 14:49:48.335  INFO 15444 --- [r-client-io-1-1] o.a.p.c.impl.ConsumerStatsRecorderImpl   : Starting Pulsar consumer perf with config: {
+  "topicNames" : [ "aep-msgpush/2000080391/MC" ],
+  "topicsPattern" : null,
+  "subscriptionName" : "2000080391",
+  "subscriptionType" : "Shared",
+  "receiverQueueSize" : 1000,
+  "acknowledgementsGroupTimeMicros" : 100000,
+  "maxTotalReceiverQueueSizeAcrossPartitions" : 50000,
+  "consumerName" : null,
+  "ackTimeoutMillis" : 30000,
+  "tickDurationMillis" : 1000,
+  "priorityLevel" : 0,
+  "cryptoFailureAction" : "FAIL",
+  "properties" : { },
+  "readCompacted" : false,
+  "subscriptionInitialPosition" : "Earliest",
+  "patternAutoDiscoveryPeriod" : 1,
+  "regexSubscriptionMode" : "PersistentOnly",
+  "deadLetterPolicy" : null,
+  "autoUpdatePartitions" : true
+}
+2022-04-08 14:49:48.336  INFO 15444 --- [r-client-io-1-1] o.a.p.c.impl.ConsumerStatsRecorderImpl   : Pulsar client config: {
+  "serviceUrl" : "pulsar+ssl://msgpush.ctwing.cn:16651",
+  "operationTimeoutMs" : 30000,
+  "statsIntervalSeconds" : 60,
+  "numIoThreads" : 1,
+  "numListenerThreads" : 1,
+  "connectionsPerBroker" : 1,
+  "useTcpNoDelay" : true,
+  "useTls" : true,
+  "tlsTrustCertsFilePath" : "",
+  "tlsAllowInsecureConnection" : false,
+  "tlsHostnameVerificationEnable" : false,
+  "concurrentLookupRequest" : 5000,
+  "maxLookupRequest" : 50000,
+  "maxNumberOfRejectedRequestPerConnection" : 50,
+  "keepAliveIntervalSeconds" : 30,
+  "connectionTimeoutMs" : 10000
+}
+2022-04-08 14:49:48.419  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : [[id: 0x84dfc738, L:/192.168.173.207:50709 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Connected to server
+2022-04-08 14:49:48.421  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0x84dfc738, L:/192.168.173.207:50709 - R:msgpush.ctwing.cn/117.80.147.187:16651] Connected through proxy to target broker at 192.168.73.223:6650
+2022-04-08 14:49:48.476  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConsumerImpl      : [aep-msgpush/2000080391/MC][2000080391] Subscribing to topic on cnx [id: 0x84dfc738, L:/192.168.173.207:50709 - R:msgpush.ctwing.cn/117.80.147.187:16651]
+2022-04-08 14:49:48.496  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConsumerImpl      : [aep-msgpush/2000080391/MC][2000080391] Subscribed to topic on msgpush.ctwing.cn/117.80.147.187:16651 -- consumer: 0
+2022-04-08 14:49:48.496  INFO 15444 --- [           main] c.ctiot.aep.mqmsgpush.sdk.MqMsgConsumer  : 消费者init()成功
+2022-04-08 14:49:48.497  INFO 15444 --- [           main] c.ctiot.aep.mqmsgpush.sdk.MqMsgConsumer  : 开始消费
+exit
+2022-04-08 14:49:48.886  INFO 15444 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-08 14:49:48.894  INFO 15444 --- [           main] c.g.nbpushmsg.NbpushmsgApplication       : Started NbpushmsgApplication in 11.459 seconds (JVM running for 11.862)
+2022-04-08 16:16:17.870  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.common.api.PulsarHandler      : [[id: 0xe45ef8c0, L:/192.168.173.207:50708 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Forcing connection to close after keep-alive timeout
+2022-04-08 16:16:17.887  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0xe45ef8c0, L:/192.168.173.207:50708 ! R:msgpush.ctwing.cn/117.80.147.187:16651] Disconnected
+2022-04-08 16:16:18.424  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.common.api.PulsarHandler      : [[id: 0x84dfc738, L:/192.168.173.207:50709 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Forcing connection to close after keep-alive timeout
+2022-04-08 16:16:18.425  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0x84dfc738, L:/192.168.173.207:50709 ! R:msgpush.ctwing.cn/117.80.147.187:16651] Disconnected
+2022-04-08 16:16:18.426  INFO 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Closed connection [id: 0x84dfc738, L:/192.168.173.207:50709 ! R:msgpush.ctwing.cn/117.80.147.187:16651] -- Will try again in 0.1 s
+2022-04-08 16:16:18.529  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after timeout
+2022-04-08 16:16:28.604  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 16:16:28.604  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 16:16:28.605  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 0.183 s
+2022-04-08 16:16:28.788  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 16:16:38.809  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 16:16:38.809  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 16:16:38.809  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 0.388 s
+2022-04-08 16:16:39.197  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 16:16:44.268  WARN 15444 --- [r-client-io-1-1] o.a.p.s.i.n.r.dns.DnsNameResolver        : [id: 0x131c0a6e, L:/0:0:0:0:0:0:0:0:60068] Received a DNS response with an unknown ID: 1368
+2022-04-08 16:16:44.268  WARN 15444 --- [r-client-io-1-1] o.a.p.s.i.n.r.dns.DnsNameResolver        : [id: 0x131c0a6e, L:/0:0:0:0:0:0:0:0:60068] Received a DNS response with an unknown ID: 43858
+2022-04-08 16:16:44.320  WARN 15444 --- [r-client-io-1-1] o.a.p.s.i.n.r.dns.DnsNameResolver        : [id: 0x131c0a6e, L:/0:0:0:0:0:0:0:0:60068] Received a DNS response with an unknown ID: 61763
+2022-04-08 16:16:44.321  WARN 15444 --- [r-client-io-1-1] o.a.p.s.i.n.r.dns.DnsNameResolver        : [id: 0x131c0a6e, L:/0:0:0:0:0:0:0:0:60068] Received a DNS response with an unknown ID: 53107
+2022-04-08 16:16:46.215  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : [[id: 0xa4c45c69, L:/192.168.173.207:50494 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Connected to server
+2022-04-08 16:16:46.347  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : [[id: 0xd2565a52, L:/192.168.173.207:50496 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Connected to server
+2022-04-08 16:16:46.347  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0xd2565a52, L:/192.168.173.207:50496 - R:msgpush.ctwing.cn/117.80.147.187:16651] Connected through proxy to target broker at 192.168.73.223:6650
+2022-04-08 16:16:46.400  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConsumerImpl      : [aep-msgpush/2000080391/MC][2000080391] Subscribing to topic on cnx [id: 0xd2565a52, L:/192.168.173.207:50496 - R:msgpush.ctwing.cn/117.80.147.187:16651]
+2022-04-08 16:16:46.412  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConsumerImpl      : [aep-msgpush/2000080391/MC][2000080391] Subscribed to topic on msgpush.ctwing.cn/117.80.147.187:16651 -- consumer: 0
+2022-04-08 23:06:05.035  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0xa4c45c69, L:/192.168.173.207:50494 ! R:msgpush.ctwing.cn/117.80.147.187:16651] Disconnected
+2022-04-08 23:06:05.048  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0xd2565a52, L:/192.168.173.207:50496 ! R:msgpush.ctwing.cn/117.80.147.187:16651] Disconnected
+2022-04-08 23:06:05.051  INFO 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Closed connection [id: 0xd2565a52, L:/192.168.173.207:50496 ! R:msgpush.ctwing.cn/117.80.147.187:16651] -- Will try again in 0.1 s
+2022-04-08 23:06:05.152  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after timeout
+2022-04-08 23:06:05.750  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:05.752  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:05.753  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 0.187 s
+2022-04-08 23:06:05.940  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 23:06:05.943  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:05.943  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:05.943  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 0.388 s
+2022-04-08 23:06:06.332  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 23:06:06.334  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:06.334  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:06.335  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 0.746 s
+2022-04-08 23:06:07.081  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 23:06:07.083  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:07.083  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:07.083  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 1.586 s
+2022-04-08 23:06:08.669  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 23:06:08.674  WARN 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : Failed to open connection to msgpush.ctwing.cn:16651 : java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:08.676  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries 
+2022-04-08 23:06:08.676  WARN 15444 --- [r-client-io-1-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException: java.util.concurrent.CompletionException: java.net.UnknownHostException: failed to resolve 'msgpush.ctwing.cn' after 4 queries  -- Will try again in 2.913 s
+2022-04-08 23:06:11.590  INFO 15444 --- [ulsar-timer-4-1] o.a.p.client.impl.ConnectionHandler      : [aep-msgpush/2000080391/MC] [2000080391] Reconnecting after connection was closed
+2022-04-08 23:06:11.628  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : [[id: 0x9f07ef0e, L:/192.168.2.12:63789 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Connected to server
+2022-04-08 23:06:11.734  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConnectionPool    : [[id: 0xc843b529, L:/192.168.2.12:63794 - R:msgpush.ctwing.cn/117.80.147.187:16651]] Connected to server
+2022-04-08 23:06:11.736  INFO 15444 --- [r-client-io-1-1] org.apache.pulsar.client.impl.ClientCnx  : [id: 0xc843b529, L:/192.168.2.12:63794 - R:msgpush.ctwing.cn/117.80.147.187:16651] Connected through proxy to target broker at 192.168.73.223:6650
+2022-04-08 23:06:11.781  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConsumerImpl      : [aep-msgpush/2000080391/MC][2000080391] Subscribing to topic on cnx [id: 0xc843b529, L:/192.168.2.12:63794 - R:msgpush.ctwing.cn/117.80.147.187:16651]
+2022-04-08 23:06:11.864  INFO 15444 --- [r-client-io-1-1] o.a.pulsar.client.impl.ConsumerImpl      : [aep-msgpush/2000080391/MC][2000080391] Subscribed to topic on msgpush.ctwing.cn/117.80.147.187:16651 -- consumer: 0
+2022-04-08 23:06:11.997  WARN 15444 --- [r-client-io-1-1] c.s.circe.checksum.Crc32cIntChecksum     : Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+接收消息::::{"upPacketSN":-1,"upDataSN":-1,"topic":"v1/up/ad","timestamp":1649422311082,"tenantId":"2000080391","serviceId":"","protocol":"lwm2m","productId":"15183701","payload":{"APPdata":"S1chATQBODYxNTQxMDY1Mzg1Mzg4NDYwMDQ4OTU4ODE5MTQ1ODk4NjA0NjkxMDIxNzAwNDg2NDUfE0lPVA=="},"messageType":"dataReport","deviceType":"","deviceId":"29d43c0e3cca4615bd91e40d75117981","assocAssetId":"","IMSI":"undefined","IMEI":"861541065385388"}
+接收消息::::{"upPacketSN":-1,"upDataSN":-1,"topic":"v1/up/ad","timestamp":1649422312561,"tenantId":"2000080391","serviceId":"","protocol":"lwm2m","productId":"15183701","payload":{"APPdata":"S1chAhQBODYxNTQxMDY1Mzg1Mzg4AQAfEgAAAElPVA=="},"messageType":"dataReport","deviceType":"","deviceId":"29d43c0e3cca4615bd91e40d75117981","assocAssetId":"","IMSI":"undefined","IMEI":"861541065385388"}
+2022-04-08 23:07:02.546  INFO 15444 --- [ulsar-timer-4-1] o.a.p.c.impl.ConsumerStatsRecorderImpl   : [aep-msgpush/2000080391/MC] [2000080391] [04e7b] Prefetched messages: 0 --- Consume throughput received: 0.03 msgs/s --- 0.00 Mbit/s --- Ack sent rate: 0.03 ack/s --- Failed messages: 0 --- Failed acks: 0
