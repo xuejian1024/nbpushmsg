@@ -52,6 +52,7 @@ public class NbpushmsgApplication {
         String certFilePath = ""; //直接填空字符串，CA证书，JDK已经内置相关根证书，无需指定
 
         System.out.println("master1");
+        System.out.println("hot-fix2");
         Map<String, NBCamera> map = new HashMap<String,NBCamera>();
         NBCamera camera = new NBCamera();
         camera.setNb_device_id("861541064342026");
